@@ -12,12 +12,12 @@
     .group {
       padding-left: 40px;
       
-      .group-title{
+      &__title{
         padding: 35px 0px 15px 0px;
         font-size: 20px;
         color: #333333;
     }
-      .group-member{
+      &__member{
         color: #999999;
         font-size: 12px;
       }
@@ -44,18 +44,18 @@
     .user-message {
       display: flex;
       padding-bottom: 12px;
-      .user {
+      &__username {
         color: #333333;
         font-size: 16px;
       }
-      .day{
+      &__day{
         color: #999999;
         font-size: 12px;
       }
       }
     .group-messages {
         padding-bottom:46px;
-      .group-message {
+      &__comment {
         color: #434A54;
         font-size: 14px;
       }

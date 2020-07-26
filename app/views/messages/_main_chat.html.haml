@@ -1,33 +1,35 @@
 .chat-main
   .main-header
     .group
-      %p.group-title
+      %p.group__title
         test
-      %p.group-member
-        Member.masa
+      %p.group__member
+        Member:masa
     .btn
-      %p.edit-btn
+      %p.btn__edit
       = link_to "#", class:"edit_btn" do
         Edit 
 
   .messages
     .user-message
-      %p.user
+      %p.user-message__username
         masa
-      %p.day
+      %p.user-message__day
         2019/11/20(Wed)17:43:01
     .group-messages
-      %p.group-message  
+      %p.group-messages__comment
         おはよう！
 
     .user-message
-      %p.user
+      %p.user-message__username
         masa
-      %p.day
+      %p.user-message__day
         2019/11/20(Wed)17:43:01
     .group-messages
-      %p.group-message  
+      %p.group-messages__comment
         今日は夜から雨
+
+
   .form
     %form.new.message
       .input-box
