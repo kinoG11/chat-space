@@ -1,0 +1,20 @@
+.chat-side
+  .side-header
+    .side-header__box
+      %p.side-header__box__username
+        masa
+      %ul.side-header__box__menu
+        %li.side-header__box__edit-user
+          = link_to "#", class:"fa" do
+            = icon("fas", "edit")
+        %li.side-header__box__new-group
+          = link_to "#", class:"fa" do
+            = icon("fas", "cog")
+  .groups
+    .group
+      %p.group-name
+        techcamp
+      %p.group-message
+        まだメッセージはありません
+
+ 
