@@ -2,13 +2,13 @@
   .main-header
     .group
       %p.group__title
-        test
+        = @group.name
       %p.group__member
-        = @group.users.each do |user|
+        - @group.users.each do |user|
           = user.name
     .btn
       %p.btn__edit
-      = link_to "#", class:"edit_btn" do
+      = link_to edit_group_path(current_user), class:"edit_btn" do
         Edit 
 
   .messages
